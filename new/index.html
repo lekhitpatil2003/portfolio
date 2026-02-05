@@ -7,138 +7,83 @@
   <title>Lekhit Portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    body {
-      background: linear-gradient(#2D6A4F,#D4A373,#FEFAE0);
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    /* Floating Navbar */
-    .floating-nav {
-      position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(37, 31, 71, 0.85);
-      backdrop-filter: blur(12px);
-      border-radius: 50px;
-      padding: 10px 25px;
-      box-shadow: 0 10px 30px rgba(134, 203, 146, 0.25);
-      z-index: 1000;
-    }
-
-    .floating-nav .nav-link {
-      color: #ffffff;
-      padding: 10px 18px;
-      margin: 0 5px;
-      border-radius: 30px;
-      position: relative;
-      transition: 0.4s;
-    }
-
-    .floating-nav .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: #86CB92;
-      border-radius: 50%;
-      bottom: 6px;
-      left: 50%;
-      transform: translateX(-50%) scale(0);
-      transition: 0.3s;
-    }
-
-    .floating-nav .nav-link:hover,
-    .floating-nav .nav-link.active {
-      color: #86CB92;
-      background: rgba(134, 203, 146, 0.15);
-      box-shadow: 0 0 12px rgba(134, 203, 146, 0.6);
-    }
-
-    .floating-nav .nav-link:hover::after,
-    .floating-nav .nav-link.active::after {
-      transform: translateX(-50%) scale(1);
-    }
-
-
-    /*Footer*/
-    /* Glass Footer */
-    .glass-footer {
-      /* background: #2D6A4F; */
-      backdrop-filter: blur(12px);
-      border-top: 2px solid rgba(134, 203, 146, 0.2);
-      box-shadow: 0 -10px 30px rgba(134, 203, 146, 0.25);
-      padding: 10px 0px 0px 0px;
-      color: #ffffff;
-    }
-
-    .text-secondary {
-      font-size: 17px;
-      color: #bfbfbf;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <nav class="floating-nav">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </nav>
-
-  <header class="py-5 text-center mt-5">
+  <!-- Hero Section -->
+  <header id="home" class="hero text-center mt-5">
     <div class="container">
-      <h1 class="display-3 fw-bold">Hi, I'm <span class="text-info">Lekhit</span></h1>
-      <p class="lead text-secondary">B.E Student | Java Developer and Designer</p>
-      <a href="#projects" class="btn btn-outline-info btn-lg mt-3">View My Work</a>
+      <h1 class="display-4 fw-bold">Hi, I'm <span class="text-info">Lekhit</span></h1>
+      <p class="lead text-dark fw-semibold">B.E Student | Java Developer and Designer</p>
+      <a href="#projects" class="btn btn-dark btn-lg mt-3 shadow">View My Work</a>
     </div>
   </header>
 
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-white">About Us</h2>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-white">Skills</h2>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-white">Education Details</h2>
+    </div>
+  </section>
+
+  <!-- Project Section -->
   <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Featured Projects</h2>
+      <h2 class="text-center mb-5 fw-bold text-white">Featured Projects</h2>
       <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card bg-secondary text-white h-100 border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-info">Cyber Crime Analysis</h5>
-              <p class="card-text">Analysis of cyber crime using forensic techniques and Python.</p>
-              <a href="#" class="btn btn-sm btn-dark">View Project</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 border-0 shadow-lg">
+            <div class="card-body p-4">
+              <h5 class="card-title text-info">Interactive Data-Visualization Platform For Health Care</h5>
+              <p class="card-text text-secondary">Analysis of cyber crime using forensic techniques and
+                Python.</p>
+              <a href="#" class="btn btn-sm btn-outline-info">View Details</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card bg-secondary text-white h-100 border-0 shadow">
-            <div class="card-body">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 border-0 shadow-lg">
+            <div class="card-body p-4">
               <h5 class="card-title text-info">Green Guru App</h5>
-              <p class="card-text">UI for an organic microgreens business using Python Tkinter.</p>
-              <a href="#" class="btn btn-sm btn-dark">View Project</a>
+              <p class="card-text text-secondary">UI for an organic microgreens business using Python
+                Tkinter.</p>
+              <a href="#" class="btn btn-sm btn-outline-info">View Details</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card bg-secondary text-white h-100 border-0 shadow">
-            <div class="card-body">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100 border-0 shadow-lg">
+            <div class="card-body p-4">
               <h5 class="card-title text-info">NLP Mini Project</h5>
-              <p class="card-text">Natural Language Processing implementation for text analysis.</p>
-              <a href="#" class="btn btn-sm btn-dark">View Project</a>
+              <p class="card-text text-secondary">Natural Language Processing implementation for text
+                analysis.</p>
+              <a href="#" class="btn btn-sm btn-outline-info">View Details</a>
             </div>
           </div>
         </div>
@@ -146,16 +91,23 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-3 border-top border-secondary glass-footer">
-    <div class="container text-center">
-      <p class="text-secondary">
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-white">Contact Us</h2>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="glass-footer bg-dark">
+    <div class=" text-center">
+      <p class="mb-0 opacity-75">
         &copy; 2026 Lekhit Patil • All Rights Reserved.
       </p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>
